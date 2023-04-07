@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
+:root{
+  --img-url:  url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/63f01872-c522-49ae-8fdc-d7b0bc0a18a0/daku5l1-cb4b34f2-4740-4032-9a51-52d1834bd7cb.jpg/v1/fill/w_1024,h_549,q_75,strp/osaka_castle_concept_2h_by_zudartslee_daku5l1-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTQ5IiwicGF0aCI6IlwvZlwvNjNmMDE4NzItYzUyMi00OWFlLThmZGMtZDdiMGJjMGExOGEwXC9kYWt1NWwxLWNiNGIzNGYyLTQ3NDAtNDAzMi05YTUxLTUyZDE4MzRiZDdjYi5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.odOYgcAs1JO2HWhg-i--vYBuKc04wL_NKcOqjf7TBaU);
+
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  /* background-image: var(--img-url); */
+  background-repeat: no-repeat;
+  background: linear-gradient(to bottom left, transparent 5%, hsla(0, 0%, 0%, 0.553) 56%),linear-gradient(to bottom, transparent 100%, hsl(0, 0%, 0%) 56%), var(--img-url);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow-x: hidden;
+
+  /* animation: shodowImage 1s alternate infinite ease-in-out; */
+}
+
+@keyframes shodowImage {
+  0%{
+    background: linear-gradient(to bottom left, transparent 5%, hsla(0, 0%, 0%, 0.553) 56%),linear-gradient(to bottom left, transparent 100%, hsl(0, 0%, 0%) 56%),  var(--img-url);
+    background-position: center;
+    background-size: cover;
+  }
+  10%{
+    background: linear-gradient(to bottom left, transparent 5%, hsla(0, 0%, 0%, 0.553) 56%),linear-gradient(to bottom left, transparent 80%, hsl(0, 0%, 0%) 56%),  var(--img-url);
+    background-position: center;
+    background-size: cover;
+  }
+ 20%{
+    background: linear-gradient(to bottom left, transparent 5%, hsla(0, 0%, 0%, 0.553) 56%),linear-gradient(to bottom left, transparent 60%, hsl(0, 0%, 0%) 56%),  var(--img-url);
+    background-position: center;
+    background-size: cover;
+  }
+  30%{
+    background: linear-gradient(to bottom left, transparent 5%, hsla(0, 0%, 0%, 0.553) 56%),linear-gradient(to bottom left, transparent 40%, hsl(0, 0%, 0%) 56%),  var(--img-url);
+    background-position: center;
+    background-size: cover;
+  }
+  40%{
+    background: linear-gradient(to bottom left, transparent 5%, hsla(0, 0%, 0%, 0.553) 56%),linear-gradient(to bottom left, transparent 20%, hsla(0, 0%, 0%, 0.505) 56%),  var(--img-url);
+    background-position: center;
+    background-size: cover;
+  }
+  50%{
+    background: linear-gradient(to bottom left, transparent 5%, hsla(0, 0%, 0%, 0.553) 56%),linear-gradient(to bottom left, transparent 0%, hsl(0, 0%, 0%) 56%),  var(--img-url);
+    background-position: center;
+    background-size: cover;
+  }
+  60%{
+    background: linear-gradient(to bottom left, transparent 5%, hsla(0, 0%, 0%, 0.553) 56%),linear-gradient(to bottom left, transparent -20%, hsl(0, 0%, 0%) 56%),  var(--img-url);
+    background-position: center;
+    background-size: cover;
+  }
+  70%{
+    background: linear-gradient(to bottom left, transparent 5%, hsla(0, 0%, 0%, 0.553) 56%),linear-gradient(to bottom left, transparent -40%, hsl(0, 0%, 0%) 56%),  var(--img-url);
+    background-position: center;
+    background-size: cover;
+  }
+  80%{
+    background: linear-gradient(to bottom left, transparent 5%, hsla(0, 0%, 0%, 0.553) 56%),linear-gradient(to bottom left, transparent -60%, hsl(0, 0%, 0%) 56%),  var(--img-url);
+    background-position: center;
+    background-size: cover;
+  }
+  90%{
+    background: linear-gradient(to bottom left, transparent 5%, hsla(0, 0%, 0%, 0.553) 56%),linear-gradient(to bottom left, transparent -80%, hsl(0, 0%, 0%) 56%),  var(--img-url);
+    background-position: center;
+    background-size: cover;
+  }
+  100%{
+    background: linear-gradient(to bottom left, transparent 5%, hsla(0, 0%, 0%, 0.553) 56%),linear-gradient(to bottom left, transparent -100%, hsl(0, 0%, 0%) 56%),  var(--img-url);
+    background-position: center;
+    background-size: cover;
+  }
+}
+/* cicle */
+.App__circle {
+  width: 600px;
+  height: 600px;
+  background: linear-gradient(0deg, rgba(168, 32, 32, 1) 0%, rgba(144, 58, 45, 1) 100%);
+  border-radius: 100%;
+  position: absolute;
+  right: calc(100% /5);
+  z-index: 1;
+}
+
+.iosArrow {
+  position: absolute;
+  color: #000;
+  font-size: 1.1rem;
+  z-index: 2;
+  right: calc(45% /5);
+  top: 15%;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: -13px -10px 44px -8px rgba(168, 32, 32, 1);
+  border: 1px solid #fff;
+
+}
+
+.iosArrow:nth-child(1) {
+  right: calc(80% /5);
+  top: 8%;
+}
+.iosArrow:hover{
+  background: transparent;
+  border: 1px solid #fff;
+  cursor: pointer;
+  color: #fff;
+}
+.App__circleRight {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(0deg, rgba(168, 32, 32, 1) 0%, rgba(144, 58, 45, 1) 100%);
+  border-radius: 100%;
+  position: absolute;
+  right: -20%;
+  top: -30%;
+}
+
+.App__personImg {
+  position: absolute;
+  width: 400px;
+  bottom: 0;
+  left: 0%;
+  z-index: 3;
+
+}
+
+/* main */
+.main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10%;
+ 
+}
+/* circle */
+.main__circle{
+  width: 50px;
+  height: 50px;
+  font-size: 1.2rem;
+  position: absolute;
+  right: 28%;
+  top: 40%;
+  border-radius: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main__circle span{
+  width: 25px;
+  height: 25px;
+  background-color: rgba(168, 32, 32, 1);
+  display: inline-block;
+  border-radius: 100%;
+}
+/* main__years */
+.main__discounts {
+  top: 14%;
+  left: 10%;
+  position: absolute;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  z-index: 3;
+}
+
+.main__discounts span:nth-child(2) {
+  z-index: 5;
+  color: #fff;
+}
+
+.main__discounts__discounts {
+  color: #ffffff56;
+  position: absolute;
+  left: 10%;
+  font-size: 4.0rem;
+  margin-top: -30px;
+  z-index: 2 !important;
+}
+
+/* main */
+.main h1 {
+  color: #fff;
+  font-family: 'Oxygen', sans-serif;
+  z-index: 3;
+  font-size: 4.2rem;
+  margin-top: 20%;
+  z-index: 3;
+  text-align: center;
+}
+
+.main p {
+  width: 350px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  text-align: center;
+  z-index: 3;
+}
+
+.main__btns {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 80px;
+  z-index: 3;
+}
+
+.main__btns button {
+  padding: 10px 15px;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: .95rem;
+  box-shadow: -13px -10px 44px -8px rgba(168, 32, 32, 1);
+  background-color: transparent;
+  color: #fff;
+}
+
+.main__btns button svg {
+  font-size: 1.6rem;
+}
+
+.main__btns button:hover {
+  background-color: #ffffffda;
+  transition: all .5s ease-in-out;
+  color: #000;
+}
+
+/* social */
+.main__social {
+  list-style: none;
+  display: flex;
+  color: #fff;
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: calc(100%/100 - 10px);
+  right: 3%;
+  gap: 10px;
+}
+
+.main__social li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  background-color: #ffffff7b;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  border-radius: 100%;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.main__social li:hover {
+  transition: all .5s ease-in-out;
+  background-color: transparent;
+}
+
+@media screen and (min-width:600px) {
+  .App__circle {
+    left: -10%;
+  }
+
+  .App__circleRight {
+    right: -10%;
+    top: -30%;
+
+  }
+
+  .main__discounts{
+    top: 30%;
+    left: 10%;
+  }
+}
